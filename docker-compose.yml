@@ -25,7 +25,7 @@ services:
     - DB_PASS=password
     - DB_NAME=owncloud_db
 
-    - OWNCLOUD_URL=http://cloud.example.com:10080
+    - OWNCLOUD_URL=https://www.chimaltv.ga
 
     - OWNCLOUD_ADMIN_USER=admin
     - OWNCLOUD_ADMIN_PASSWORD=123
@@ -49,4 +49,4 @@ services:
     depends_on:
     - owncloud
     ports:
-    - "10080:80"
+    - "80:80"
