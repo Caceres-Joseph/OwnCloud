@@ -1,4 +1,4 @@
-version: '2.1'
+version: '2'
 
 volumes:
   files:
@@ -31,11 +31,6 @@ services:
       - OWNCLOUD_MYSQL_UTF8MB4=true
       - OWNCLOUD_REDIS_ENABLED=true
       - OWNCLOUD_REDIS_HOST=redis
-    healthcheck:
-      test: ["CMD", "/usr/bin/healthcheck"]
-      interval: 30s
-      timeout: 10s
-      retries: 5
     volumes:
       - files:/mnt/data
 
