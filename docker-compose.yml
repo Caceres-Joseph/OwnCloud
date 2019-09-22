@@ -49,4 +49,4 @@ services:
     depends_on:
     - owncloud
     ports:
-    - "80:80"
+    - "10080:80"
